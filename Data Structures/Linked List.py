@@ -1,6 +1,3 @@
-from hashlib import new
-
-
 class Node:
 
     def __init__(self, data):
@@ -20,7 +17,7 @@ class LinkedList:
         self.head = new_node
 
     def print(self):
-        if self.head == None:
+        if self.head is None:
             print('Linked list is empty')
             return
 
@@ -49,9 +46,9 @@ class LinkedList:
         self.head = prev
 
     # Recursive | T O(n) M O(n)
-    def reverse_recursive(self):
-        if not head:
-            return None
+    # def reverse_recursive(self):
+    #     if not head:
+    #         return None
 
 
 ll = LinkedList()
@@ -60,5 +57,5 @@ ll.insertAtBeginning(3)
 ll.insertAtBeginning(3)
 ll.insertAtBeginning(21)
 ll.insertAtBeginning(3)
-ll.reverse()
+ll.reverse_iterative()
 ll.print()
